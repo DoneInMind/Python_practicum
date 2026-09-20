@@ -1,0 +1,2 @@
+num = [int(s.strip()) for s in input().strip("[] ").split(',')  if s.strip()]
+print(*num, sep=', ')   
