@@ -1,0 +1,9 @@
+x = int(input())
+
+match x:
+	case 1: print("один")
+	case 2: print("два")
+	case 3: print("три")
+	case _ if not(x & 1): print("четное")
+	case _: print("N - это много")
+
