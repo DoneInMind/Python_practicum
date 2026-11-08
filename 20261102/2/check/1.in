@@ -1,0 +1,2 @@
+from itertools import count, islice
+print(*islice(slide(count(10), 4), 15))
