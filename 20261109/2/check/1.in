@@ -1,0 +1,8 @@
+A = Triangle((0, 0), (6, 0), (0, 6))
+B = Triangle((1, 1), (2, 1), (1, 2))
+C = Triangle((6, 0), (8, 0), (6, 3))
+E = Triangle((0, 0), (3, 3), (6, 6))
+print(*(f"{n}({bool(x)}):{round(abs(x), 3)}" for n, x in zip("ABCE", (A, B, C, E))))
+print(f"{B < A=}, {A < B=}, {E < B=}, {C < B=}")
+print(f"{B in A=}, {A in A=}, {E in B=}, {A in B=}, {C in A=}")
+print(f"{A & C=}, {B & C=}, {E & A=}, {A & B=}")

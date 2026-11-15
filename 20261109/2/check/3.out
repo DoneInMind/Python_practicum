@@ -1,0 +1,4 @@
+P(True):18.0 Q(True):18.0 D(True):1.5 Z(False):0
+P < Q=False, Q < P=False, D < P=True, Z < D=True
+P in Q=False, Z in P=True, P in P=True, D in Q=False
+P & Q=True, Q & P=True, D & P=False, Z & Z=False

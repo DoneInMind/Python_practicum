@@ -1,0 +1,11 @@
+a, b, c = Omnibus(), Omnibus(), Omnibus()
+a.p = b.p = c.p = a.q = 0
+print(a.p, b.q, c.r)
+del a.p, b.p, c.p
+print(a.p, b.p, c.p, a.q)
+b.q = c.q = a.q = []
+del b.r, c.r
+print(a.q, b.q, c.q, a.r)
+del a.q, a.q, b.q
+c.p = 1
+print(a.q, a.p, b.p, c.p)

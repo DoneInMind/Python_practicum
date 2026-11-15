@@ -1,0 +1,4 @@
+T(True):8.0 U(True):2.0 V(True):2.0 W(True):2.0 E(False):0
+U < T=True, U < V=False, V < U=False, W < T=True
+U in T=True, T in U=False, V in T=False, W in W=True, E in W=True
+T & U=True, T & V=True, U & V=False, T & W=False, E & T=False

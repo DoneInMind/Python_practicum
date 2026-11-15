@@ -1,0 +1,12 @@
+x, y = Omnibus(), Omnibus()
+print(x.a, y.a)
+x.a = 1
+print(x.a, y.a)
+x.a = 2
+y.a = None
+print(x.a, y.a)
+del x.a
+print(x.a, y.a)
+del x.a
+del x.zzz
+print(x.a, y.a)

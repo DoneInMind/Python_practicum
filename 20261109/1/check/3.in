@@ -1,0 +1,12 @@
+objs = [Omnibus() for _ in range(5)]
+for i, o in enumerate(objs):
+    for j in range(i + 1):
+        setattr(o, f"f{j}", j)
+print(*(getattr(objs[0], f"f{j}") for j in range(5)))
+for o in objs[::2]:
+    del o.f0
+print(objs[1].f0, objs[4].f4, objs[3].f2)
+delattr(objs[4], "f4")
+delattr(objs[4], "f4")
+objs[0].f4 = "x"
+print(objs[2].f4, objs[2].f1, objs[0].f0)

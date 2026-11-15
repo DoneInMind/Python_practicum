@@ -1,0 +1,8 @@
+P = Triangle((0, 2), (6, 2), (3, 8))
+Q = Triangle((3, 0), (6, 6), (0, 6))
+D = Triangle((10, 10), (13, 10), (10, 11))
+Z = Triangle((2, 2), (2, 2), (5, 1))
+print(*(f"{n}({bool(x)}):{round(abs(x), 3)}" for n, x in zip("PQDZ", (P, Q, D, Z))))
+print(f"{P < Q=}, {Q < P=}, {D < P=}, {Z < D=}")
+print(f"{P in Q=}, {Z in P=}, {P in P=}, {D in Q=}")
+print(f"{P & Q=}, {Q & P=}, {D & P=}, {Z & Z=}")
